@@ -11,47 +11,85 @@ body {
     height: 100%;
 }
 
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    color: white;
+
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
 main {
     width: 100%;
     height: 100%;
     background-color: rgb(12, 12, 12);
 }
 
-.center{
-    width: 70%;
-    height: 80%;
+.center {
+    width: 75%;
+    height: 85%;
     position: absolute;
-    left: 20%;
-    top: 50%;
-    transform: translate(0,-50% );
+    left: 17%;
+    top: 55%;
+    transform: translate(0, -50%);
 }
 
-.text{
-    width: 400px;
-    height: 120px;
+.text {
+    width: 450px;
+    height: 110px;
     position: absolute;
-    bottom: 15%;
-    left: -10%;
+    bottom: 50%;
+    left: -5%;
     z-index: 8;
     overflow: hidden;
 }
-.text h1{
+
+.text h1 {
     color: white;
     position: absolute;
-    top:120px;
+    top: 100px;
     font-size: 6vw;
 }
 
-.imageContainer{
+.content {
+    width: 450px;
+    height: 100px;
+    position: absolute;
+    bottom: 30%;
+    left: -5%;
+    z-index: 8;
+    overflow: hidden;
+}
+
+.content p {
+    position: absolute;
+    top: 120px;
+    margin-bottom: 50px;
+    font-size: 1.4vw;
+    color: white;
+}
+
+.imageContainer {
     width: 0%;
     height: 100%;
     position: absolute;
     overflow: hidden;
 }
 
-img{
+img {
     height: 100%;
     object-fit: cover;
 }
-
-
